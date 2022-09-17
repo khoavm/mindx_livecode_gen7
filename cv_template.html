@@ -1,0 +1,34 @@
+<html>
+  <head> </head>
+  <body>
+    <h1>INFORMATION</h1>
+    <p>Name:<%= name%></p>
+    <p>Email: <%= email%></p>
+    <p>Mobile: <%= mobile%></p>
+    <p>Github: <%= github%></p>
+    <p>LinkedIn: <%= linkedIn%></p>
+    <p>Email: <%= email%></p>
+    <hr/>
+    <h1>Summary</h1>
+    <p><%= summary%></p>
+    <hr/>
+    <h1>Experiences</h1>
+  <%experiences.forEach(function (value) { %>
+      <p>Job Title: <%= value.jobTitle%></p>
+      <p>Company: <%= value.company%></p>
+      <p>Period <%= value.period%></p>
+      <p>Job Description: <%= value.jobDescription%></p>
+   <%})%>
+    <hr>
+    <h1>Education</h1>
+    <p>University: <%= university%></p>
+    <p>Faculty: <%= faculty%></p>
+    <p>GPA: <%= gpa%></p>
+    <hr>
+    <h1>Skills</h1>
+     <%skills.forEach(function (value) { %>
+      <p><%= value%></p>
+
+   <%})%>
+  </body>
+</html>
